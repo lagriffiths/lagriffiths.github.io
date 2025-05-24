@@ -1,0 +1,105 @@
+/* ================================
+   THEME: Light (default)
+   ================================ */
+:root {
+  --bg: #ffffff;
+  --text: #1a1a1a;
+  --accent: #007acc;
+  --muted: #555;
+  --border: #e0e0e0;
+}
+
+/* ================================
+   THEME: Dark
+   ================================ */
+body.dark {
+  --bg: #1a1a1a;
+  --text: #f0f0f0;
+  --accent: #66ccff;
+  --muted: #ccc;
+  --border: #444;
+}
+
+/* ================================
+   Base Styles
+   ================================ */
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: system-ui, sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: var(--muted);
+}
+
+.contact a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.25rem;
+  margin-bottom: 0.75rem;
+}
+
+ul {
+  padding-left: 1.25rem;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+
+/* ================================
+   Theme Toggle Button
+   ================================ */
+#theme-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+#theme-toggle:hover {
+  transform: scale(1.1);
+}

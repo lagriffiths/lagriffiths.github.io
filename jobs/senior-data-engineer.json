@@ -1,0 +1,13 @@
+{
+  "title": "Senior Data Engineer",
+  "team": "Business Intelligence",
+  "company": "Lloyds Banking Group",
+  "location": "Gloucester, UK",
+  "dates": "2016–2019",
+  "highlights": [
+    "Built data pipelines on the UK’s largest mortgage data warehouse.",
+    "Automated test cycles, reducing execution time from 14 days to 6 hours.",
+    "Standardised release scripts and built test libraries.",
+    "Created VB.NET front ends for automation tools adopted by the team."
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Technical Product Owner",
+  "team": "Chief Data Analytics Office",
+  "company": "Lloyds Banking Group",
+  "location": "Bristol, UK",
+  "dates": "2019–2022",
+  "highlights": [
+    "Led cross-functional teams of engineers and scientists to deliver customer-driven solutions.",
+    "Designed the bank's first Feature Store for modeling teams.",
+    "Built the BI Marketplace using SSIS and Kimball methodology.",
+    "Upskilled 20+ colleagues in SQL and Python through training.",
+    "Delivered data solutions using Teradata, Hadoop, and Apache Airflow."
+  ]
+}
