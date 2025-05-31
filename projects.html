@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Louis Griffiths | Projects</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <button id="theme-toggle" title="Toggle theme">🌙</button>
+
+    <header>
+      <h1>Projects</h1>
+      <p class="subtitle">Some of the things I'm currently working on or have built.</p>
+      <div class="contact">
+        <a href="index.html">← Back to Resume</a>
+      </div>
+    </header>
+
+    <section>
+      <h2>Featured Projects</h2>
+      <div id="project-list"></div>
+    </section>
+
+    <footer>
+      &copy; 2025 Louis Griffiths
+    </footer>
+  </div>
+
+  <script>
+    const toggleBtn = document.getElementById('theme-toggle');
+    const body = document.body;
+
+    if (localStorage.getItem('theme') === 'dark') {
+      body.classList.add('dark');
+      toggleBtn.textContent = '☀️';
+    }
+
+    toggleBtn.addEventListener('click', () => {
+      const isDark = body.classList.toggle('dark');
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+      toggleBtn.textContent = isDark ? '☀️' : '🌙';
+    });
+
+    const container = document.getElementById('project-list');
+    fetch('projects/projects.json')
+        .then(res => res.json())
+        .then(projects => {
+            projects.forEach(p => {
+                const div = document.createElement('div');
+                div.style.marginBottom = '1.5rem';
+                div.innerHTML = `
+                <h3>${p.name}</h3>
+                <p>${p.description}</p>
+                ${p.link ? `<p><a href="${p.link}" target="_blank">View on GitHub</a></p>` : ''}
+                `;
+                container.appendChild(div);
+            });
+        })
+        .catch(err => {
+            container.innerHTML = '<p>Error loading projects.</p>';
+            console.error('Failed to load projects:', err);
+        });
+
+  </script>
+</body>
+</html>

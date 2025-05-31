@@ -1,0 +1,33 @@
+[
+  {
+    "name": "Whisky Web",
+    "description": "A Node.js app with PostgreSQL that tracks price changes of whiskies and visualizes trends.",
+    "link": "r"
+  },
+  {
+    "name": "Whisky Database",
+    "description": "",
+    "link": ""
+  },
+  {
+    "name": "Jira Align API Querying",
+    "description": "Connecting to the Jira Align API and running SQL and storing the output for analysis",
+    "link": null
+  },
+  {
+    "name": "SQL Runner",
+    "description": "Oracle PL/SQL ",
+    "link": null
+  },
+  {
+    "name": "",
+    "description": "",
+    "link": null
+  },
+  {
+    "name": "",
+    "description": "",
+    "link": null
+  },
+
+]

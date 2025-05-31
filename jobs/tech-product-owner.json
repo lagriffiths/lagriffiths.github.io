@@ -5,10 +5,10 @@
   "location": "Bristol, UK",
   "dates": "2019–2022",
   "highlights": [
-    "Led cross-functional teams of engineers and scientists to deliver customer-driven solutions.",
-    "Designed the bank's first Feature Store for modeling teams.",
-    "Built the BI Marketplace using SSIS and Kimball methodology.",
-    "Upskilled 20+ colleagues in SQL and Python through training.",
-    "Delivered data solutions using Teradata, Hadoop, and Apache Airflow."
+    "Led multiple cross-functional teams simultaneously, delivering customer-focused data solutions across the organisation.",
+    "Acted as Product Owner, Architect, Scrum Master, and hands-on Engineer, balancing technical leadership with strategic delivery.",
+    "Spearheaded the design of the bank’s first Feature Store—built with a strong focus on GDPR compliance—to accelerate data science innovation, while also leading the build of a BI Marketplace on SQL Server using Kimball methodology.",
+    "Championed team growth by mentoring over 20 colleagues through Python and SQL training, significantly improving capability and morale.",
+    "Delivered within a modern tech stack including Teradata, Hadoop, Airflow, Domino Data Lab, Python, SQL, and Bash, all under Agile delivery."
   ]
 }

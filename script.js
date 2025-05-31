@@ -23,7 +23,7 @@ const loadJobs = async () => {
         </div>
       `;
       container.innerHTML += jobHtml;
-    } catch (err) {
+    } catch (err) { 
       console.error(`Error loading ${file}:`, err);
     }
   }
