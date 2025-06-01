@@ -1,33 +1,67 @@
 [
   {
     "name": "Whisky Web",
-    "description": "A Node.js app with PostgreSQL that tracks price changes of whiskies and visualises trends.",
+    "description": "A dockerised javascript webapp which queries a Postgres database. The purpose is to serve a dashboard giving information on price fluctuations from the whisky exchange. For this I've built:",
+    "bullets" : ["Specific item tracking page which shows the price for an individual whisky over time, the maximum, minimum, average and current price.",
+                 "The homepage is a dashboard which shows a number of reports including: Price Dropped (Yesterday vs Today), Price Increased (Yesterday vs Today), Removed Today (Was Available Yesterday), Newly Available Today, Price 95% or less of Average, Current Offers"],
     "link": ""
   },
   {
     "name": "Whisky Database",
-    "description": "",
+    "description": "A python application which gets data from the whisky exchanges hidden product API, the data is loaded into a Postgres database and deployed via docker. I have a separate docker container running Postgres so it's not part of my docker-compose file. For this I've developed:",
+    "bullets" : ["Logging for the pipeline, captured in Postgres.",
+                 "Python script to build the data tables using sqlalchemy.",
+                 "Test connection functionality.",
+                 "Entry point shell file to set up cron jobs to run at 9am everyday."],
     "link": ""
   },
   {
     "name": "Jira Align API Querying",
-    "description": "Connecting to the Jira Align API and running SQL and storing the output for analysis",
-    "link": null
+    "description": "Using python to connect to the Jira Align REST API and storing the output for analysis in a dataframe",
+    "bullets" : [],
+    "link": ""
+  },
+  {
+    "name": "Jira dashboards",
+    "description": "Using JQL to build a suite of queries for enabling better conversations with colleagues",
+    "bullets" : ["Finds all cloned items",
+                 "Features with no Team",
+                 "Finds all flagged items by project",
+                 "In progress but no updates in 2 weeks",
+                 "WIP more than 2 weeks, under 3 (Warning)",
+                 "WIP more than 3 weeks, under 4 (Warning)",
+                 "WIP more than 4 weeks (Action)",
+                 "WIP under 2 weeks (No Action)",
+                 "Missing Acceptance Criteria  - Backlog",
+                 "Missing Acceptance Criteria  - Current Sprint",
+                 "Missing Acceptance Criteria  - Future Planned Sprints",
+                 "Missing Dates",
+                 "Missing Descriptions",
+                 "Missing Parent Link (Feature)",
+                 "Newly Created Work (under 1 week)",
+                 "Not in Progress, No Updates in 4 weeks (and not done)",
+                 "Passed Planned End Date",
+                 "Unassigned Work",
+                 "Waste Data"],
+    "link": ""
   },
   {
     "name": "SQL Runner",
-    "description": "Oracle PL/SQL ",
-    "link": null
+    "description": "Oracle PL/SQL code runner. The purpose of this project was to help testers who ran SQL on their machines, a single test window could take 2 weeks to complete, however, with delivery being delayed and timelines being squeezed always came at the cost to testing. In addition, the testers did not have a central repository for their scripts, which led to a lot of repeated rework. The idea of this was to move the running of the SQL tests from a users computer to running it on the servers. In completing this I reduced the length of time a single test window took to complete from weeks to hours.",
+    "bullets" : ["SQL library hosted on a central database",
+                  "Use of global temporary tables to pull the necessary test script from one database to another, this data was only stored for that session instance",
+                  "Packages written to run any script it was given and store an example of the output for analysis if an error occurred.",
+                  "Robust logging to understand what scripts had been run",
+                  "The ability to configure how many scripts could run at once",
+                  "The ability to regression test a table and look for differences between a previous load (assuming data had been stored away - this was great for comparing a Route to Live table against production)"],
+
+    "link": ""
   },
   {
     "name": "",
     "description": "",
-    "link": null
-  },
-  {
-    "name": "",
-    "description": "",
-    "link": null
+    "bullets" : [],
+    "link": ""
   }
 
 ]
