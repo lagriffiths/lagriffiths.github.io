@@ -28,7 +28,7 @@
     "name": "Jira Align API Querying",
     "description": "Using python to connect to the Jira Align REST API and storing the output for analysis in a dataframe",
     "bullets" : [],
-    "link": ""
+    "link": "https://github.com/lagriffiths/Jira-Align-API"
   },
   {
     "name": "Jira dashboards",
@@ -52,7 +52,7 @@
                  "Passed Planned End Date",
                  "Unassigned Work",
                  "Waste Data"],
-    "link": ""
+    "link": "https://github.com/lagriffiths/Jira-Queries"
   },
   {
     "name": "SQL Runner",
