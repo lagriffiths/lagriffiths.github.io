@@ -1,5 +1,14 @@
 [
   {
+    "name": "Shut The Box",
+    "description": "A web version of the Game Shut the Box",
+    "bullets" : ["Shut the Box uses two dice and a special wooden playing tray. The tray features the numbers 1 - 12 in a row, each of which has a hinged or sliding cover.",
+                 "A turn involves repeatedly throwing the dice and shutting or covering a number or pair of numbers every throw.",
+                 "There are two options in my version, the classic addition of the dice, the second is with more advanced maths using division, multiplication, addition and subtraction.",
+                "This has been written in javascript"],
+    "link": "https://lagriffiths.github.io/shut-the-box/"
+  },
+  {
     "name": "Whisky Web",
     "description": "A dockerised javascript webapp which queries a Postgres database. The purpose is to serve a dashboard giving information on price fluctuations from the whisky exchange. For this I've built:",
     "bullets" : ["Specific item tracking page which shows the price for an individual whisky over time, the maximum, minimum, average and current price.",
